@@ -1,6 +1,7 @@
 package com.example.android.marsphotos.network
 
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
@@ -14,6 +15,8 @@ private val retrofit = Retrofit.Builder()
         .build()
 
 private val moshi = Moshi.Builder()
+    .add(KotlinJsonAdapterFactory())
+    .build()
 
 interface MarsApiService{
 
