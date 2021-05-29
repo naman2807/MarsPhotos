@@ -47,6 +47,7 @@ class OverviewViewModel : ViewModel() {
     private fun getMarsPhotos() {
         viewModelScope.launch {
             val listResult = MarsApi.retrofitService.getPhotos()
+            _status.value = listResult
         }
     }
 }
