@@ -18,5 +18,7 @@ interface MarsApiService{
 }
 
 object MarsApi{
+    val retrofitService : MarsApiService by lazy {
 
+    }
 }
