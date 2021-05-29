@@ -1,4 +1,3 @@
 package com.example.android.marsphotos.network
 
-class MarsPhoto {
-}
+data class MarsPhoto()
