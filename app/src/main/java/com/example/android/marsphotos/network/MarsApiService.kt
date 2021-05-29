@@ -9,12 +9,13 @@ private const val BASE_URL =
 
 private val retrofit = Retrofit.Builder()
         .addConverterFactory(ScalarsConverterFactory.create())
-        .baseUrl(BASE_URL).build()
+        .baseUrl(BASE_URL)
+        .build()
 
 interface MarsApiService{
 
-    @GET("/photos")
-    fun getPhotos() : String
+    @GET("photos")
+    suspend fun getPhotos() : String
 }
 
 object MarsApi{
