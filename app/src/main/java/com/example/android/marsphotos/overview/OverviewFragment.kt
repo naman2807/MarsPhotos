@@ -40,14 +40,13 @@ class OverviewFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        val binding = FragmentOverviewBinding.inflate(inflater)
+        val binding = FragmentOverviewBinding.inflate(inflater)
 
-        val binding = GridViewItemBinding.inflate(inflater)
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
         binding.lifecycleOwner = this
 
         // Giving the bindingAdd an app:imageUrl attribute to the ImageView element to use the new image loading binding adapter. access to the OverviewViewModel
-        binding.overViewModel = viewModel
+        binding.viewModel = viewModel
 
         return binding.root
     }
