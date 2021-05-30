@@ -5,17 +5,14 @@ import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import coil.load
 
-class BindingAdapters {
+
     @BindingAdapter("imageURL")
     fun bindImage(imgView : ImageView, imgSrc : String?){
         imgSrc?.let {
             val imgURI = imgSrc.toUri().buildUpon().scheme("https").build()
-            imgView.load(imgURI){
-
-            }
+            imgView.load(imgURI)
         }
     }
-}
 
 /*
 Binding Adapters are annotated methods used to create custom setters for custom properties of your view.
