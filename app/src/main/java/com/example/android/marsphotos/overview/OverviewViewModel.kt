@@ -53,8 +53,8 @@ class OverviewViewModel : ViewModel() {
     private fun getMarsPhotos() {
         viewModelScope.launch {
             try {
-                _photos.value = MarsApi.retrofitService.getPhotos()[0]
-                _status.value = "First Image URL = ${_photos.value!!.imgSrcUrl}"
+                _photos.value = MarsApi.retrofitService.getPhotos()
+                _status.value = "Success. All images retrieved."
             } catch (e: Exception) {
                 _status.value = "Failure: ${e.message}"
             }
