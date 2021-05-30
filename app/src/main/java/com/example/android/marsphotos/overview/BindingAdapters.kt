@@ -4,13 +4,16 @@ import android.widget.ImageView
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import coil.load
+import com.example.android.marsphotos.R
 
 
-    @BindingAdapter("imageURL")
+@BindingAdapter("imageURL")
     fun bindImage(imgView : ImageView, imgSrc : String?){
         imgSrc?.let {
             val imgURI = imgSrc.toUri().buildUpon().scheme("https").build()
-            imgView.load(imgURI)
+            imgView.load(imgURI){
+                placeholder(R.drawable.loading_animation)
+            }
         }
     }
 
