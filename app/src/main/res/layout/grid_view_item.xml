@@ -20,9 +20,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable
-            name="overViewModel"
-            type="com.example.android.marsphotos.overview.OverviewViewModel" />
+
+
     </data>
     <ImageView
         android:id="@+id/mars_image"
