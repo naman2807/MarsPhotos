@@ -37,7 +37,7 @@ class OverviewViewModel : ViewModel() {
 
     private val _photos = MutableLiveData<List<MarsPhoto>>()
 
-    val photos : LiveData<MarsPhoto> = _photos
+    val photos : LiveData<List<MarsPhoto>> = _photos
 
     /**
      * Call getMarsPhotos() on init so we can display status immediately.
