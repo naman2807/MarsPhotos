@@ -31,5 +31,10 @@
         android:layout_height="match_parent"
         tools:context="com.example.android.marsphotos.overview.OverViewFragment">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photos_grid"
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
