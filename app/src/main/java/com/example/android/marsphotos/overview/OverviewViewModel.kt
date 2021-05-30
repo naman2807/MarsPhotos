@@ -32,7 +32,9 @@ class OverviewViewModel : ViewModel() {
     // The internal MutableLiveData that stores the status of the most recent request
     private val _status = MutableLiveData<String>()
 
-    private val _photo = MutableLiveData<MarsPhoto>()
+    private val _photos = MutableLiveData<MarsPhoto>()
+
+    val photos : LiveData<MarsPhoto> = _photos
 
     // The external immutable LiveData for the request status
     val status: LiveData<String> = _status
