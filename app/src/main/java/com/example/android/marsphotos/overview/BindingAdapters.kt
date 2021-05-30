@@ -13,6 +13,7 @@ import com.example.android.marsphotos.R
             val imgURI = imgSrc.toUri().buildUpon().scheme("https").build()
             imgView.load(imgURI){
                 placeholder(R.drawable.loading_animation)
+                error(R.drawable.ic_connection_error)
             }
         }
     }
