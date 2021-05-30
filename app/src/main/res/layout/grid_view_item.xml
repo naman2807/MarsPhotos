@@ -31,6 +31,6 @@
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:padding="2dp"
-        app:imgSrc= "${overViewModel.photos.imgSrcUrl}"
+        app:imageURL="${overViewModel.photos.imgSrcUrl}"
         tools:src="@tools:sample/backgrounds/scenic"/>
 </layout>
