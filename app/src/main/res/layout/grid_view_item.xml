@@ -31,5 +31,5 @@
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:padding="2dp"
-        app:imageURL="@{overViewModel.photos.imgSrcUrl}"/>
+        app:imageURL="@{photo.imgSrcUrl}"/>
 </layout>
