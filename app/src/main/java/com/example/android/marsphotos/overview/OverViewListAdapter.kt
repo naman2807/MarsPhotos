@@ -1,6 +1,15 @@
 package com.example.android.marsphotos.overview
 
-class OverViewListAdapter {
+import android.widget.ListAdapter
+import androidx.recyclerview.widget.DiffUtil
+import com.example.android.marsphotos.network.MarsPhoto
+
+/*
+Extend the PhotoGridAdapter class from ListAdapter with the constructor parameters
+shown below. The PhotoGridAdapter class extends ListAdapter, whose constructor needs the list item type,
+the view holder, and a DiffUtil.ItemCallback implementation.
+ */
+class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewListViewHolder>(DiffCallBack) {
 
 
 }
