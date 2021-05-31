@@ -26,6 +26,10 @@ import com.example.android.marsphotos.network.MarsPhoto
         adapter.submitList(data)
     }
 
+    fun bindStatus(imgView: ImageView, status: MarsApiStatus){
+
+    }
+
 /*
 Binding Adapters are annotated methods used to create custom setters for custom properties of your view.
 
