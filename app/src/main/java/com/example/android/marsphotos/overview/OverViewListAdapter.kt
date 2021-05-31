@@ -1,5 +1,6 @@
 package com.example.android.marsphotos.overview
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
@@ -22,7 +23,7 @@ class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewLi
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OverViewListViewHolder {
-        TODO("Not yet implemented")
+        return OverViewListViewHolder(GridViewItemBinding.inflate(LayoutInflater.from(parent.context)))
     }
 
     override fun onBindViewHolder(holder: OverViewListViewHolder, position: Int) {
