@@ -32,6 +32,13 @@ class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewLi
     }
 
     companion object DiffCallBack : DiffUtil.ItemCallback<MarsPhoto>{
+        override fun areItemsTheSame(oldItem: MarsPhoto, newItem: MarsPhoto): Boolean {
+            TODO("Not yet implemented")
+        }
+
+        override fun areContentsTheSame(oldItem: MarsPhoto, newItem: MarsPhoto): Boolean {
+            TODO("Not yet implemented")
+        }
 
     }
 }
