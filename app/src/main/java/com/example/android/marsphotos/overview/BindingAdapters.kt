@@ -26,6 +26,7 @@ import com.example.android.marsphotos.network.MarsPhoto
         adapter.submitList(data)
     }
 
+@BindingAdapter("marsApiStatus")
     fun bindStatus(imgView: ImageView, status: MarsApiStatus){
 
     }
