@@ -39,6 +39,10 @@ import com.example.android.marsphotos.network.MarsPhoto
                 statusImageView.visibility = View.VISIBLE
                 statusImageView.setImageResource(R.drawable.ic_connection_error)
             }
+
+            MarsApiStatus.DONE -> {
+                statusImageView.visibility = View.GONE
+            }
         }
     }
 
