@@ -34,6 +34,11 @@ import com.example.android.marsphotos.network.MarsPhoto
                 statusImageView.visibility = View.VISIBLE
                 statusImageView.setImageResource(R.drawable.loading_img)
             }
+
+            MarsApiStatus.ERROR -> {
+                statusImageView.visibility = View.VISIBLE
+                statusImageView.setImageResource(R.drawable.ic_connection_error)
+            }
         }
     }
 
