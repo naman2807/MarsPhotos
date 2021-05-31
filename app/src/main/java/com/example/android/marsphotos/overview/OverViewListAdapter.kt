@@ -27,7 +27,8 @@ class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewLi
     }
 
     override fun onBindViewHolder(holder: OverViewListViewHolder, position: Int) {
-        TODO("Not yet implemented")
+       val marsPhoto = getItem(position)
+        holder.bind(marsPhoto)
     }
 }
 /*
