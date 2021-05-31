@@ -55,6 +55,7 @@ class OverviewViewModel : ViewModel() {
      * [MarsPhoto] [List] [LiveData].
      */
     private fun getMarsPhotos() {
+        _status.value = MarsApiStatus.LOADING
         viewModelScope.launch {
             try {
                 _photos.value = MarsApi.retrofitService.getPhotos()
