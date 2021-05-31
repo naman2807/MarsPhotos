@@ -48,6 +48,8 @@ class OverviewFragment : Fragment() {
         // Giving the bindingAdd an app:imageUrl attribute to the ImageView element to use the new image loading binding adapter. access to the OverviewViewModel
         binding.viewModel = viewModel
 
+        binding.photosGrid.adapter = OverViewListAdapter()
+
         return binding.root
     }
 }
