@@ -1,5 +1,6 @@
 package com.example.android.marsphotos.overview
 
+import android.view.View
 import android.widget.ImageView
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
@@ -29,7 +30,10 @@ import com.example.android.marsphotos.network.MarsPhoto
 @BindingAdapter("marsApiStatus")
     fun bindStatus(statusImageView: ImageView, status: MarsApiStatus){
         when(status){
-
+            MarsApiStatus.LOADING -> {
+                statusImageView.visibility = View.VISIBLE
+                statusImageView.setImageResource(R.drawable.loading_img)
+            }
         }
     }
 
