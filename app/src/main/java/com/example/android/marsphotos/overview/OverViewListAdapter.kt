@@ -15,7 +15,10 @@ the view holder, and a DiffUtil.ItemCallback implementation.
 class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewListViewHolder>(DiffCallBack) {
 
     class OverViewListViewHolder(private val binding : GridViewItemBinding) : RecyclerView.ViewHolder(binding.root){
-
+        fun bind(MarsPhoto: MarsPhoto) {
+            binding.photo = MarsPhoto
+            binding.executePendingBindings()
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OverViewListViewHolder {
