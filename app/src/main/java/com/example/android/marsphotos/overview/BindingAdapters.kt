@@ -3,8 +3,10 @@ package com.example.android.marsphotos.overview
 import android.widget.ImageView
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
+import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.android.marsphotos.R
+import com.example.android.marsphotos.network.MarsPhoto
 
 
 @BindingAdapter("imageURL")
@@ -16,6 +18,10 @@ import com.example.android.marsphotos.R
                 error(R.drawable.ic_connection_error)
             }
         }
+    }
+
+    fun bindRecyclerView(recyclerView: RecyclerView, data : List<MarsPhoto>){
+
     }
 
 /*
