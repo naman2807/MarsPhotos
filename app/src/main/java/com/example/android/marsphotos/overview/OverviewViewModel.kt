@@ -62,6 +62,7 @@ class OverviewViewModel : ViewModel() {
                 _status.value = MarsApiStatus.DONE
             } catch (e: Exception) {
                 _status.value = MarsApiStatus.ERROR
+                _photos.value = listOf()
             }
         }
     }
