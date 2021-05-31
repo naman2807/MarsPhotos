@@ -30,6 +30,10 @@ class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewLi
        val marsPhoto = getItem(position)
         holder.bind(marsPhoto)
     }
+
+    companion object DiffCallBack : DiffUtil.ItemCallback<MarsPhoto>{
+
+    }
 }
 /*
 ListAdapter is a subclass of the RecyclerView.Adapter class for presenting List data in a
