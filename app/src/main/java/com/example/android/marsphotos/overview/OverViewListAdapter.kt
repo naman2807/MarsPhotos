@@ -2,6 +2,8 @@ package com.example.android.marsphotos.overview
 
 import android.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
+import com.example.android.marsphotos.databinding.GridViewItemBinding
 import com.example.android.marsphotos.network.MarsPhoto
 
 /*
@@ -11,7 +13,9 @@ the view holder, and a DiffUtil.ItemCallback implementation.
  */
 class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewListViewHolder>(DiffCallBack) {
 
+    class OverViewListViewHolder(private val binding : GridViewItemBinding) : RecyclerView.ViewHolder(binding.root){
 
+    }
 }
 /*
 ListAdapter is a subclass of the RecyclerView.Adapter class for presenting List data in a
