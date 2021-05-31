@@ -1,6 +1,7 @@
 package com.example.android.marsphotos.overview
 
-import android.widget.ListAdapter
+import android.view.ViewGroup
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.marsphotos.databinding.GridViewItemBinding
@@ -15,6 +16,14 @@ class OverViewListAdapter: ListAdapter<MarsPhoto, OverViewListAdapter.OverViewLi
 
     class OverViewListViewHolder(private val binding : GridViewItemBinding) : RecyclerView.ViewHolder(binding.root){
 
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OverViewListViewHolder {
+        TODO("Not yet implemented")
+    }
+
+    override fun onBindViewHolder(holder: OverViewListViewHolder, position: Int) {
+        TODO("Not yet implemented")
     }
 }
 /*
