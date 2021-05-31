@@ -23,6 +23,7 @@ import com.example.android.marsphotos.network.MarsPhoto
 @BindingAdapter("listData")
     fun bindRecyclerView(recyclerView: RecyclerView, data : List<MarsPhoto>){
         val adapter = recyclerView.adapter as OverViewListAdapter
+        adapter.submitList(data)
     }
 
 /*
